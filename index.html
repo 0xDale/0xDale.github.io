@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Paraverse Art Station</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="logoo.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logoo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://twitter.com/paraverse_world">Twitter</a></li>
+                <li><a href="https://discord.gg/paraverse">Discord</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Paraverse Art Station</h2>
+                <p>Here I collected the latest arts devoted to Paraverse Project. If you are interested to see your art here, feel free to ask me on Twitter. Made by 0xDale</p>
+                <a href="https://www.paraverse.world/">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="111.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="222.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="333.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="444.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="555.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="666.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="777.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="888.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="999.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="1000.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+            </div>
+            
+        </div>
+        <ul class="sci">
+            <li><a href="https://twitter.com/stayal9ve2kk"><img src="twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/0xdale/"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true,
+        });
+
+
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector(".toggle");
+            const navigation = document.querySelector(".navigation");
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+      </script>
+    
+</body>
+</html>
